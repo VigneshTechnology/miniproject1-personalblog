@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Form Validation using Javascript</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+	<nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Wander Lust</a>
+      </div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="image.html">Image</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="payment.html">To help us</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="wrapper">
+	<div class="form">
+		<div class="title">
+			Login to travel with us
+		</div>
+		<form method="post" action="successpage.html" onsubmit="return validation();">
+			<div class="input_wrap">
+				<label for="input_text">Email or Username</label>
+				<div class="input_field">
+					<input type="text" class="input" id="input_text">
+				</div>
+			</div>
+			<div class="input_wrap">
+				<label for="input_password">Password</label>
+				<div class="input_field">
+					<input type="password" class="input" id="input_password">
+				</div>
+			</div>
+			<div class="input_wrap">
+				<span class="error_msg">Incorrect username or password. Please try again</span>
+				<input type="submit" id="login_btn" class="btn disabled" value="Login" disabled="true">
+			</div>
+		</form>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
